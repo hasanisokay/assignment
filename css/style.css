@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+body{
+    font-family: 'Work Sans', sans-serif;
+    margin: 50px 240px 0 240px;
+}
+/* --------------
+nav section style  
+-----------------*/
+nav header{
+    background-color: #FF900E1A;
+}
+.nav-title{
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+.nav-menu li{
+    list-style: none;
+    display: inline;
+    padding-left: 60px;
+}
+.nav-menu{
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* nav ends here 
+
+*/
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.header-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    text-align: center;
+}
+.header-title{
+    font-weight: 700;
+    font-size: 64px;
+}
+.header-title h1{
+    margin: 100px 0 0 0;   
+    line-break: auto;
+}
+.header-description{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+.button{
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border-radius: 8px;
+    padding: 21px 24px 20px 25px;
+    border: none;
+    font-size: 20px;
+}
+.quicklist-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.quicklist{
+    margin-top: 85px;
+    display: flex;
+    gap: 73px;
+}
+.quicklist-title{
+    font-size: 45px;
+    font-weight: 500;
+}
+.quicklist-title h3, .quicklist-description p{
+    margin: 0;
+}
+.quicklist-description{
+    color: #727272;
+    font-size: 16px;
+}
+.word-quicklist{
+    color: #727272;
+}
+.word-features{
+    color: #FF900E;
+}
+.quicklist-detail{
+    margin-top: 202px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+/* feature section starts here  
+---------------------
+*/
+.features-container-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    padding-left: 21px;
+    border-left: 5px solid #FF900E;
+}
+.feature-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.feature-description{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+.feature-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.features-container{
+    display: flex;
+    gap: 54px;
+}
+.feature-box{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.feature-button{
+    position: relative;
+    bottom: 150px;
+    padding: 46px 42px 45px 42px;
+}
+.feature-button h2{
+    font-size: 65px;
+    font-weight: 700;
+    margin: 0;
+}
+.feature-button p{
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 576px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .nav-title{
+        font-size: 24px;
+    }
+    .nav-menu li{
+        padding: 0 0 0 0 ;
+    }
+    /*----------------------------
+    responsive style for nav ends 
+    ------------------------------*/
+    .header-top{
+        gap: 10px;
+    }
+    .header-title{
+        font-size: 24px;
+    }
+    .header-title h1{
+        margin-top: 0;
+    }
+    .header-description{
+        font-size: 16px;
+        width: 60%px;
+        margin: 0 20px 0 20px;
+    }
+    .header-image img{
+        width: 300px;
+    }
+    .quicklist-images{
+        grid-template-columns: 1fr;
+    }
+    .button{
+        padding: 12px 10px 12px 14px;
+        border: none;
+        font-size: 20px;
+    }
+    .quicklist{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .quicklist-detail{
+        margin-top: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .quicklist-title{
+        font-size: 24px;
+    }
+    .quicklist-image img{
+        width: 250px;
+    }
+    /* quicklist ends here 
+    ------------------------- */
+    .features-container{
+        flex-direction: column;
+        text-align: center;  
+    }
+    .features-container-title{
+        font-size: 24px;
+        text-align: left;
+    }
+    .feature-box{
+        text-align: center;   
+    }
+    .feature-right-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .feature-right-part img{
+        width: 250px;
+    }
+    .feature-button{
+        position: inherit; 
+        padding: 22px 18px 20px 20px; 
+        46px 42px 45px 42px;
+    }
+    .feature-button h2{
+        font-size: 24px;
+    }
+    .feature-button p{
+        font-size: 14px;
+    }
+    
+}
