@@ -115,7 +115,6 @@ header{
     padding-left: 21px;
     border-left: 5px solid #FF900E;
 }
-
 .feature-title{
     font-size: 20px;
     font-weight: 600;
@@ -207,6 +206,9 @@ some facts starts here
 }
 
 @media only screen and (max-width: 576px){
+    main{
+        padding: 0;
+    }
     body{
         margin: 0;
         padding: 0;
@@ -260,10 +262,8 @@ some facts starts here
     }
     .quicklist-detail{
         margin-top: 0;
+        align-items: center;
         text-align: center;
-    }
-    .quicklist-description p{
-        width: 230px;
     }
     .quicklist-title{
         font-size: 24px;
@@ -275,7 +275,7 @@ some facts starts here
     ------------------------- */
     .features-container{
         flex-direction: column;
-        text-align: center;  
+        border: 10px solid;
     }
     .features-container-title{
         font-size: 24px;
@@ -295,7 +295,7 @@ some facts starts here
     }
     .feature-button{
         position: inherit; 
-        padding: 22px 18px 20px 20px;
+        padding: 22px 18px 20px 20px; 
     }
     .feature-button h2{
         font-size: 24px;
@@ -303,6 +303,10 @@ some facts starts here
     .feature-button p{
         font-size: 14px;
     }
+    /*---------------------
+        features ends here
+    ------------------------
+     */
     .some-facts-box-container{
         flex-direction: column;
         align-items: center;
