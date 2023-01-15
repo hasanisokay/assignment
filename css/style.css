@@ -28,8 +28,7 @@ nav, header{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 50px 240px 0 240px;
+    justify-content: space-around;
 }
 /* nav ends here 
 
@@ -416,5 +415,11 @@ some facts starts here
     .copyright-text{
         font-size: 16px;
     }
-
 }
+/* @media only screen and (min-width:577px) and (max-width:992px) {
+    .quicklist{
+        flex-direction: column;
+        gap: 73px;
+    }
+    
+} */
