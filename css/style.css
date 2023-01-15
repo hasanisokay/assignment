@@ -1,40 +1,48 @@
+/* importing font Work Sans from google font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+/* font and margin for whole body */
 body{
     font-family: 'Work Sans', sans-serif;
     margin: 0;
 }
-/* --------------
-nav section style  
+/* -------------
+background color for upper part. nav and header
 -----------------*/
 nav, header{
     background-color: #FF900E1A;
+    width: 100%;
+}
+/* --------------
+nav section style start
+-----------------*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .nav-title{
     color: #131313;
     font-weight: 700;
     font-size: 45px;
 }
-.nav-menu li{
-    list-style: none;
-    display: inline;
-    padding-left: 45px;
-}
+/* navigation menu which is in top right side */
 .nav-menu{
     font-weight: 500;
     font-size: 18px;
     color: #424242;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.nav-menu li{
+    list-style: none;
+    display: inline;
+    padding-left: 45px;
 }
-/* nav ends here 
+/*--------------------- 
+    nav styling ends here 
+-----------------------*/
 
-*/
-main{
-    padding: 50px 240px 0 240px;
-}
+/* -------------------
+    header starts here 
+----------------------*/
 header{
     display: flex;
     flex-direction: column;
@@ -63,6 +71,19 @@ header{
     font-size: 16px;
     color: #727272;
 }
+/* -------------------
+    header ends here 
+----------------------*/
+
+/* -------------------
+    padding for whole menu 
+----------------------*/
+main{
+    padding: 50px 240px 0 240px;
+}
+/* -------------------------------------------------------------------
+    default button style. it is used in whole page buttons for styling.
+----------------------------------------------------------------------*/
 .button{
     color: #FFFFFF;
     background-color: #FF900E;
@@ -71,19 +92,25 @@ header{
     border: none;
     font-size: 20px;
 }
-.quicklist-images{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+/* -------------------
+    quicklist starts here 
+----------------------*/
+.quicklist-title{
+    font-size: 45px;
+    font-weight: 500;
 }
+/* ----------------------------------------------------------
+    class quicklist contains whole grid images in this section    
+--------------------------------------------------------------*/
 .quicklist{
     margin-top: 85px;
     display: flex;
     gap: 73px;
 }
-.quicklist-title{
-    font-size: 45px;
-    font-weight: 500;
+.quicklist-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
 }
 .quicklist-title h3, .quicklist-description p{
     margin: 0;
@@ -92,21 +119,38 @@ header{
     color: #727272;
     font-size: 16px;
 }
+/* ------------------------
+    color of the word "quicklist"   
+---------------------------*/
 .word-quicklist{
     color: #727272;
 }
+/* ------------------------
+    color of the word "features"   
+---------------------------*/
 .word-features{
     color: #FF900E;
 }
+/*--------------------------------------------------
+    class quicklist contains texts which is in 
+    right side of the this section    
+----------------------------------------------------*/
 .quicklist-detail{
     margin-top: 202px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-/* feature section starts here  
----------------------
-*/
+/*-------------------------
+quicklist section ends here  
+-
+-
+-
+---------------------------*/
+
+/*-------------------------
+feature section starts here  
+---------------------------*/
 .features-container-title{
     font-weight: 700;
     font-size: 45px;
@@ -153,13 +197,27 @@ header{
     margin: 0;
 }
 /* --------------
-some facts starts here  
+some facts section
+starts here  
 ---------------
 */
+/* ---------------------
+this is the mother of this 
+whole some fact section 
+------------------------*/
 .some-facts{
     display: flex;
     flex-direction: column;
     gap: 100px;
+}
+/*---------------------
+       parent of the upper 
+       side texts of some fact
+       section 
+    ------------------------
+     */
+.some-facts-head{
+    width: 545px;
 }
 .some-facts-head-title{
     font-weight: 700;
@@ -169,13 +227,17 @@ some facts starts here
 .some-facts-head-title h3{
     margin: 0;
 }
-.some-facts-head{
-    width: 545px;
-}
+/* ---------------------
+this is the parent of boxes 
+in some fact section 
+------------------------*/
 .some-facts-box-container{
     display: flex;
     gap: 124px;
 }
+/* ---------------------
+single container of each box 
+------------------------*/
 .some-facts-box{
     border: 1px solid #FF900E;
     border-radius: 8px;
@@ -185,11 +247,11 @@ some facts starts here
     text-align: center;
     padding: 45px 36px 60px 35px;
 }
+/* special effects in the boxes */
 .some-facts-box:hover{
     transform: translate(5px, 20px);
     background-color:  #c5d5c5;
 }
-
 .some-facts-box-count-number{
     font-weight: 600;
     font-size: 45px;
@@ -203,13 +265,24 @@ some facts starts here
     font-size: 20px;
     color: #727272;
 }
-/* some facts ends */
+/* ------------------
+some facts ends 
+---------------------*/
+/* -------------------
+extra section for bonus
+which is "most viewed projects
+starts from here
+---------------------*/
+/* ------------------
+mother of this whole section
+---------------------*/
 .blog-section{
     margin-top: 100px;
 }
 .blog-title{
     text-align: center;
     font-size: 40px;
+    color: #3b2727;
 }
 .blog-container{
     display: grid;
@@ -221,22 +294,29 @@ some facts starts here
     width: 300px;
     height: 200px;
 }
+/* special effects in these boxes */
 .blog img:hover{
     transform: translate(-20px);
 }
-/* blogs end */
-.sponsors-logo{
-    filter: grayscale(100%);
-    display: flex;
-    width: 90%;
-    gap: 155px;
-}
-.sponsors{
+/*--------------------
+ blogs end 
+ ---------------------*/
+ /* sponsors section starts */
+
+ /* mother of this section */
+ .sponsors{
     margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+}
+ /* logo container */
+.sponsors-logo{
+    filter: grayscale(100%);
+    display: flex;
+    width: 90%;
+    gap: 155px;
 }
 .sponsors-text{
     text-align: center;
@@ -253,6 +333,9 @@ some facts starts here
     font-size: 16px;
     color: #727272;
 }
+/* --------------------
+end of sponsors section
+----------------------- */
 .copyright-section{
     background-color:  #FFF4E7;
     border-radius: 8px;
@@ -267,7 +350,10 @@ some facts starts here
     position: relative;
     top: 30%;
 }
-
+/* ------------------------------
+media query for making responsive 
+design starts from here
+---------------------------------*/
 @media only screen and (max-width: 576px){
     main{
         padding: 0;
@@ -291,7 +377,7 @@ some facts starts here
         padding: 0 0 0 0 ;
     }
     /*----------------------------
-    responsive style for nav ends 
+    nav ends 
     ------------------------------*/
     .header-top{
         gap: 10px;
@@ -310,6 +396,9 @@ some facts starts here
     .header-image img{
         width: 100%;
     }
+    /*--------------- 
+    header ends
+    -----------------*/
     .quicklist-images{
         grid-template-columns: 1fr;
     }
@@ -333,7 +422,8 @@ some facts starts here
     .quicklist-image img{
         width: 75%;
     }
-    /* quicklist ends here 
+    /*----------------------- 
+    quicklist ends here 
     ------------------------- */
     .features-container{
         flex-direction: column;
@@ -374,14 +464,15 @@ some facts starts here
         gap: 20px;
         margin-bottom: 20px;
     }
-    .some-facts-head-title{
-        font-size: 20px;
-    }
+    
     .some-facts-head-description{
         font-size: 14px;
     }
     .some-facts-head{
         width: 75%;
+    }
+    .some-facts-head-title{
+        font-size: 20px;
     }
     .some-facts{
         margin-top: 30px;
@@ -390,8 +481,12 @@ some facts starts here
         text-align: center;
         width: 90%;
     }
+    /*---------------------
+     some facts end
+    ------------------------
+     */
     .blog-title{
-        font-size: 24px;
+        font-size: 26px;
     }
     .blog-container{
         grid-template-columns: repeat(1,150px );
@@ -408,6 +503,10 @@ some facts starts here
     .sponsors-text{
         width: 80%;
     }
+    /*---------------------
+    blog ends
+    ------------------------
+     */
     .copyright-section{
         height: 100px;
         margin: 40px 20px 40px 20px;
@@ -416,13 +515,18 @@ some facts starts here
         font-size: 16px;
     }
 }
+/* ----------------------------
+end of mobile responsive style 
+------------------------------*/
 @media only screen and (min-width:577px) and (max-width:992px) {
     main{
     padding: 50px 240px 0 240px;
     }
+    body img{
+        width: 75%;
+    }
     .quicklist{
         flex-direction: column;
         gap: 73px;
-    }
-    
+    }    
 }
