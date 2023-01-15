@@ -2,6 +2,7 @@
 body{
     font-family: 'Work Sans', sans-serif;
     /* padding: 50px 240px 0 240px; */
+    margin: 0;
 }
 /* --------------
 nav section style  
@@ -204,12 +205,53 @@ some facts starts here
     font-size: 20px;
     color: #727272;
 }
-
+/* some facts ends */
+.sponsors-logo{
+    filter: grayscale(100%);
+    display: flex;
+    gap: 155px;
+}
+.sponsors{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.sponsors-text{
+    text-align: center;
+    width: 35%;
+}
+.sponsors-text h3{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin: 0;
+}
+.sponsors-text p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+.copyright-section{
+    background-color:  #FFF4E7;
+    border-radius: 8px;
+    height: 100px;
+    margin: 130px 240px 240px 215px;
+}
+.copyright-text{
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
 @media only screen and (max-width: 576px){
     main{
         padding: 0;
     }
-    body{
+    .body{
         margin: 0;
         padding: 0;
     }
@@ -328,5 +370,23 @@ some facts starts here
         text-align: center;
         width: 100%;
     }
-    
+    .sponsors-logo{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .sponsors-text h3{
+        font-size: 24px;
+    }
+    .sponsors-text{
+        width: 80%;
+    }
+    .copyright-section{
+        height: 100px;
+        margin: auto;
+    }
+    .copyright-text{
+        font-size: 16px;
+    }
+
 }
