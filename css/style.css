@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 body{
     font-family: 'Work Sans', sans-serif;
-    /* padding: 50px 240px 0 240px; */
     margin: 0;
 }
 /* --------------
@@ -18,7 +17,7 @@ nav, header{
 .nav-menu li{
     list-style: none;
     display: inline;
-    padding-left: 40px;
+    padding-left: 45px;
 }
 .nav-menu{
     font-weight: 500;
@@ -229,6 +228,7 @@ some facts starts here
 .sponsors-logo{
     filter: grayscale(100%);
     display: flex;
+    width: 90%;
     gap: 155px;
 }
 .sponsors{
@@ -308,14 +308,13 @@ some facts starts here
         margin: 0 20px 0 20px;
     }
     .header-image img{
-        width: 300px;
+        width: 100%;
     }
     .quicklist-images{
         grid-template-columns: 1fr;
     }
     .button{
         padding: 12px 10px 12px 14px;
-        border: none;
         font-size: 20px;
     }
     .quicklist{
@@ -332,7 +331,7 @@ some facts starts here
         font-size: 24px;
     }
     .quicklist-image img{
-        width: 250px;
+        width: 75%;
     }
     /* quicklist ends here 
     ------------------------- */
@@ -353,7 +352,7 @@ some facts starts here
         gap: 20px;
     }
     .feature-right-part img{
-        width: 250px;
+        width: 75%;
     }
     .feature-button{
         position: inherit; 
@@ -382,20 +381,21 @@ some facts starts here
         font-size: 14px;
     }
     .some-facts-head{
-        width: 250px
+        width: 75%;
     }
     .some-facts{
         margin-top: 30px;
         align-items: center;
         gap: 20px;
         text-align: center;
-        width: 100%;
+        width: 90%;
     }
     .blog-title{
         font-size: 24px;
     }
     .blog-container{
-        grid-template-columns: repeat(1,200px );
+        grid-template-columns: repeat(1,150px );
+        padding-right: 100px;
     }
     .sponsors-logo{
         flex-direction: column;
@@ -416,10 +416,13 @@ some facts starts here
         font-size: 16px;
     }
 }
-/* @media only screen and (min-width:577px) and (max-width:992px) {
+@media only screen and (min-width:577px) and (max-width:992px) {
+    main{
+    padding: 50px 240px 0 240px;
+    }
     .quicklist{
         flex-direction: column;
         gap: 73px;
     }
     
-} */
+}
