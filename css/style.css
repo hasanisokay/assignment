@@ -275,7 +275,6 @@ some facts starts here
     ------------------------- */
     .features-container{
         flex-direction: column;
-        border: 10px solid;
     }
     .features-container-title{
         font-size: 24px;
