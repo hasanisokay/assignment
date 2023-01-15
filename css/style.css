@@ -18,7 +18,7 @@ nav, header{
 .nav-menu li{
     list-style: none;
     display: inline;
-    padding-left: 60px;
+    padding-left: 40px;
 }
 .nav-menu{
     font-weight: 500;
