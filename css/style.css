@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 body{
     font-family: 'Work Sans', sans-serif;
-    margin: 50px 240px 0 240px;
+    /* padding: 50px 240px 0 240px; */
 }
 /* --------------
 nav section style  
 -----------------*/
-nav header{
+nav, header{
     background-color: #FF900E1A;
 }
 .nav-title{
@@ -28,15 +28,20 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 50px 240px 0 240px;
 }
 /* nav ends here 
 
 */
+main{
+    padding: 50px 240px 0 240px;
+}
 header{
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    padding-bottom: 60px;
 }
 .header-top{
     display: flex;
@@ -110,6 +115,7 @@ header{
     padding-left: 21px;
     border-left: 5px solid #FF900E;
 }
+
 .feature-title{
     font-size: 20px;
     font-weight: 600;
@@ -125,6 +131,7 @@ header{
     gap: 20px;
 }
 .features-container{
+    margin-top: 40px;
     display: flex;
     gap: 54px;
 }
@@ -147,6 +154,57 @@ header{
     font-size: 25px;
     margin: 0;
 }
+/* --------------
+some facts starts here  
+---------------
+*/
+.some-facts{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.some-facts-head-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+.some-facts-head-title h3{
+    margin: 0;
+}
+.some-facts-head{
+    width: 545px;
+}
+.some-facts-box-container{
+    display: flex;
+    gap: 124px;
+}
+.some-facts-box{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 45px 36px 60px 35px;
+}
+.some-facts-box:hover{
+    transform: translate(5px, 20px);
+    background-color:  #c5d5c5;
+}
+
+.some-facts-box-count-number{
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+}
+.some-facts-box p{
+    margin: 0;
+}
+.some-facts-box-count-title{
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
 
 @media only screen and (max-width: 576px){
     body{
@@ -155,7 +213,6 @@ header{
     }
     nav{
         flex-direction: column;
-        margin-bottom: 0;
     }
     .nav-menu ul{
         display: flex;
@@ -236,14 +293,34 @@ header{
     }
     .feature-button{
         position: inherit; 
-        padding: 22px 18px 20px 20px; 
-        46px 42px 45px 42px;
+        padding: 22px 18px 20px 20px;
     }
     .feature-button h2{
         font-size: 24px;
     }
     .feature-button p{
         font-size: 14px;
+    }
+    .some-facts-box-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .some-facts-head-title{
+        font-size: 20px;
+    }
+    .some-facts-head-description{
+        font-size: 14px;
+    }
+    .some-facts-head{
+        width: 250px
+    }
+    .some-facts{
+        margin-top: 30px;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        width: 100%;
     }
     
 }
