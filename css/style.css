@@ -206,6 +206,27 @@ some facts starts here
     color: #727272;
 }
 /* some facts ends */
+.blog-section{
+    margin-top: 100px;
+}
+.blog-title{
+    text-align: center;
+    font-size: 40px;
+}
+.blog-container{
+    display: grid;
+    grid-template-columns:repeat(2, 400px);
+    gap: 40px;
+    justify-content: center;
+}
+.blog img{
+    width: 300px;
+    height: 200px;
+}
+.blog img:hover{
+    transform: translate(-20px);
+}
+/* blogs end */
 .sponsors-logo{
     filter: grayscale(100%);
     display: flex;
@@ -247,6 +268,7 @@ some facts starts here
     position: relative;
     top: 30%;
 }
+
 @media only screen and (max-width: 576px){
     main{
         padding: 0;
@@ -370,6 +392,12 @@ some facts starts here
         text-align: center;
         width: 100%;
     }
+    .blog-title{
+        font-size: 24px;
+    }
+    .blog-container{
+        grid-template-columns: repeat(1,200px );
+    }
     .sponsors-logo{
         flex-direction: column;
         flex-wrap: wrap;
@@ -383,7 +411,7 @@ some facts starts here
     }
     .copyright-section{
         height: 100px;
-        margin: auto;
+        margin: 40px 20px 40px 20px;
     }
     .copyright-text{
         font-size: 16px;
